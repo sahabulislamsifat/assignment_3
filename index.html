@@ -19,6 +19,10 @@
               clifford: "#da373d",
               "primary-bg": "rgb(171, 239, 95)",
               "primary-bg-2": "rgba(171, 239, 95, 0.5)",
+              "card-bg-1": "rgb(231, 193, 211)",
+              "card-bg-2": "rgb(239, 218, 110)",
+              "card-bg-3": "rgb(164, 218, 195)",
+              "card-bg-4": "rgb(119, 170, 234)",
             },
           },
         },
@@ -172,7 +176,7 @@
           <!-- Banner Button  -->
           <div class="flex justify-center">
             <a class="font-bold btn bg-primary-bg-2 rounded-3xl"
-              >Book Consult
+              >View Details
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -242,13 +246,13 @@
                     <figure>
                       <img src="./image/residential.png" alt="" />
                     </figure>
-                    <div class="card-body">
+                    <div class="card-body" shadow-xl>
                       <h2 class="card-title font-extrabold">Residential</h2>
                       <p class="w-4/6">
                         The barn house captivates with its blend of rustic charm
                         and modern.
                       </p>
-                    </div>
+                    </div shadow-xl>
                   </div>
                   <div
                     class="card card-side bg-base-100 shadow-xl border bg-white"
@@ -272,16 +276,164 @@
       </section>
       <!-- Our Work Progress Section  -->
       <section class="my-24">
-        <!-- Title text  -->
+        <!-- Button Title text  -->
         <div>
-          <h1>Our Works Process</h1>
+          <button class="btn ml-36 lg:ml-[570px] mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+            About Us
+          </button>
+        </div>
+        <div class="text-center">
+          <h1 class="text-2xl lg:text-4xl font-extrabold mb-4">
+            Our Works Process
+          </h1>
           <p>
             The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleek metal accents.
+            sophistication, <br />
+            featuring weathered wood, sleek metal accents.
           </p>
         </div>
         <!-- Card Content  -->
-        <div></div>
+        <div class="my-24 gap-5 grid lg:grid-cols-4">
+          <!-- Card-1  -->
+          <div class="card bg-card-bg-1 w-96 mx-auto lg:w-64 shadow-xl">
+            <div class="card-body">
+              <img class="w-10" src="./image/concept.png" alt="" />
+              <h2 class="card-title">Concept</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+          <!-- Card-2  -->
+          <div class="card bg-card-bg-2 w-96 mx-auto lg:w-64 shadow-xl">
+            <div class="card-body">
+              <img class="w-10" src="./image/flow-chart.png" alt="" />
+              <h2 class="card-title">Design Progress</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+          <!-- Card-3  -->
+          <div class="card bg-card-bg-3 w-96 mx-auto lg:w-64 shadow-xl">
+            <div class="card-body">
+              <img class="w-10" src="./image/vision.png" alt="" />
+              <h2 class="card-title">Supervision</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+          <!-- Card-4  -->
+          <div class="card bg-card-bg-4 w-96 mx-auto lg:w-64 shadow-xl">
+            <div class="card-body">
+              <img class="w-10" src="./image/budget-planning.png" alt="" />
+              <h2 class="card-title">Budget Planing</h2>
+              <p>
+                The barn house captivates with its blend of rustic charm and
+                modern.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Discuss Section  -->
+      <section class="my-24">
+        <!-- Button and Title text  -->
+        <div>
+          <button class="btn bg-primary-bg-2 ml-36 lg:ml-[570px] mb-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+              />
+            </svg>
+            Let's Connect
+          </button>
+        </div>
+        <div class="text-center">
+          <h1 class="text-2xl lg:text-4xl font-extrabold mb-4">
+            Let’s Discuss Next Project
+          </h1>
+          <p>
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, <br />
+            featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- Input and Text area  -->
+        <div class="my-10 mx-10 lg:mx-40">
+          <div class="grid lg:grid-cols-2 gap-5">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="rounded-full bg-slate-100 input input-bordered shadow-xl"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="rounded-full bg-slate-100 input input-bordered shadow-xl"
+            />
+
+            <input
+              type="number"
+              placeholder="Mobile Number"
+              class="rounded-full bg-slate-100 input input-bordered shadow-xl"
+            />
+
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="rounded-full bg-slate-100 input input-bordered shadow-xl"
+            />
+          </div>
+          <div class="my-10 mx-auto">
+            <textarea class="h-[200px] w-[350px] lg:w-[960px] bg-slate-100 rounded-xl p-4" placeholder="Write Your Message Here" name="text" id=""></textarea>
+          </div>
+          <!-- Button  -->
+           <a class="w-full font-bold btn bg-primary-bg rounded-3xl"
+              >Send Email
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 p-1 inline-flex text-white rounded-full items-center justify-center bg-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </a>
+        </div>
       </section>
     </main>
     <!-- Footer Section  -->
