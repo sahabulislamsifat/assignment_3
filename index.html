@@ -23,6 +23,7 @@
               "card-bg-2": "rgb(239, 218, 110)",
               "card-bg-3": "rgb(164, 218, 195)",
               "card-bg-4": "rgb(119, 170, 234)",
+              "footer-bg": "rgb(28, 28, 28)",
             },
           },
         },
@@ -41,6 +42,12 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      .background-img{
+        background-image: url(./image/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
@@ -58,9 +65,10 @@
   </head>
   <body class="font-manrope">
     <!-- Header Section  -->
-    <header class="container mx-auto">
-      <nav class="mb-4">
-        <div class="navbar bg-base-100">
+    <header class="bg-neutral-100 pb-10">
+      <div class="container mx-auto">
+        <nav class="mb-4">
+        <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -195,12 +203,14 @@
           </div>
         </div>
       </div>
+      </div>
     </header>
     <!-- Main Section  -->
-    <main class="container mx-auto">
+    <main>
       <!-- About US Section  -->
-      <section class="bg-about-us-bg">
-        <div class="mt-24">
+      <section class="bg-neutral-50 py-10">
+        <div class="container mx-auto">
+          <div>
           <div class="lg:mr-[1000px]">
             <div class="justify-center flex lg:grid lg:grid-cols-1 mt-5">
               <img class="hidden lg:flex" src="./image/Vector.png" alt="" />
@@ -273,10 +283,12 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
       <!-- Our Work Progress Section  -->
-      <section class="my-24">
-        <!-- Button Title text  -->
+      <section class="bg-neutral-50 py-10">
+        <div class="container mx-auto">
+          <!-- Button Title text  -->
         <div>
           <button class="btn ml-36 lg:ml-[570px] mb-5">
             <svg
@@ -353,10 +365,12 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
       <!-- Discuss Section  -->
-      <section class="my-24">
-        <!-- Button and Title text  -->
+      <section class="background-img py-1">
+       <div class="container mx-auto my-24">
+         <!-- Button and Title text  -->
         <div>
           <button class="btn bg-primary-bg-2 ml-36 lg:ml-[570px] mb-5">
             <svg
@@ -387,7 +401,7 @@
           </p>
         </div>
         <!-- Input and Text area  -->
-        <div class="my-10 mx-10 lg:mx-40">
+        <div class="mt-6 mx-10 lg:mx-40">
           <div class="grid lg:grid-cols-2 gap-5">
             <input
               type="text"
@@ -412,8 +426,8 @@
               class="rounded-full bg-slate-100 input input-bordered shadow-xl"
             />
           </div>
-          <div class="my-10 mx-auto">
-            <textarea class="h-[200px] w-[350px] lg:w-[960px] bg-slate-100 rounded-xl p-4" placeholder="Write Your Message Here" name="text" id=""></textarea>
+          <div class="container my-10 mx-auto">
+            <textarea class="h-[200px] min-w-[350px] lg:w-[960px] bg-slate-100 rounded-xl p-4" placeholder="Write Your Message Here" name="text" id=""></textarea>
           </div>
           <!-- Button  -->
            <a class="w-full font-bold btn bg-primary-bg rounded-3xl"
@@ -434,9 +448,63 @@
               </svg>
             </a>
         </div>
+       </div>
       </section>
     </main>
     <!-- Footer Section  -->
-    <footer></footer>
+    <footer class="bg-footer-bg ">
+      <div class="py-6">
+        <div class="flex justify-center pb-5 lg:pt-10">
+        <a class="btn btn-ghost text-3xl text-white font-bold">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 p-1 inline-flex text-black rounded-full items-center justify-center bg-primary-bg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+              Rinterio</a
+            >
+      </div>
+      <p class="text-center text-gray-500 px-5">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+      <div class=" text-center lg:py-5">
+        <ul class="text-gray-300 lg:flex gap-20 ">
+              <div class="lg:grid lg:grid-cols-5 lg:gap-24 lg:mx-auto">
+                <li class="py-2"><a>Home</a></li>
+              <li class="py-2"><a>Services</a></li>
+              <li class="py-2"><a>Portfolio</a></li>
+              <li class="py-2"><a>Blogs</a></li>
+              <li class="py-2"><a>Contact US</a></li>
+              </div>
+            </ul>
+      </div>
+      <div class="py-4 flex justify-center">
+         <a class="font-bold btn bg-primary-bg rounded-3xl"
+              >Book Consult
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6 p-1 inline-flex text-white rounded-full items-center justify-center bg-black"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </a>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>
